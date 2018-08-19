@@ -161,7 +161,7 @@ for a in A:
 |for i in range(len(A))|41.14|0.56|
 |for a in A|11.85|1.51|
 
-![refer to in the list]("./images/refer to in the list (N = 10^6).png")
+![refer to in the list]("/images/refer to in the list (N = 10^6).png")
 
 #### Add to the list
 
@@ -190,7 +190,7 @@ A = [i for i in range(N)]
 |A[i] = i|70.97|3.93|
 |[i for i in range(N)]|65.83|3.20|
 
-![add to the list]("./images/add to the list (N = 10^6).png")
+![add to the list](/images/add%20to%20the%20list%20(N%20%3D%2010%5E6).png)
 
 ## Usage
 
