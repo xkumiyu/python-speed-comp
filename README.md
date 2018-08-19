@@ -30,7 +30,7 @@ A = [int(input()) for _ in range(N)]
 |input()|392.40|24.36|
 |sys.stdin.readline()|37.09|1.88|
 
-![input vs sys.stdin.readline]("./images/input vs sys.stdin.readline.png")
+![input vs sys.stdin.readline](/images/input%20vs%20sys.stdin.readline.png)
 
 ### Sort
 
@@ -53,7 +53,7 @@ A = sorted(A)
 |sort()|88.54|56.98|
 |sorted()|127.03|7.51|
 
-![sort vs sorted]("./images/sort vs sorted.png")
+![sort vs sorted](/images/sort%20vs%20sorted.png)
 
 #### key of sort
 
@@ -88,7 +88,7 @@ A = sorted(A, key=itemgetter(1))
 |sorted, lambda|688.45|35.24|
 |sorted, itemgetter|588.17|15.32|
 
-![sort key]("./images/sort key.png")
+![sort key](/images/sort%20key.png)
 
 ### Loop
 
@@ -119,7 +119,7 @@ while i < N:
 |for i in range(N)|25.66|0.93|
 |while i < N|51.36|1.44|
 
-![for vs while]("./images/for vs while (N = 10^6).png")
+![for vs while](/images/for%20vs%20while%20(N%20%3D%2010%5E6).png)
 
 ### List
 
@@ -140,7 +140,7 @@ while i < N:
 |[None] * N|5.15|0.41|
 |[None for _ in range(N)]|41.17|2.05|
 
-![initialize the list]("./images/initialize the list (N = 10^6).png")
+![initialize the list](/images/initialize%20the%20list%20(N%20%3D%2010%5E6).png)
 
 #### Refer to in the list
 
@@ -161,7 +161,7 @@ for a in A:
 |for i in range(len(A))|41.14|0.56|
 |for a in A|11.85|1.51|
 
-![refer to in the list]("/images/refer to in the list (N = 10^6).png")
+![refer to in the list](images/refer%20to%20in%20the%20list%20(N%20%3D%2010%5E6).png)
 
 #### Add to the list
 
