@@ -3,7 +3,6 @@ import os
 import pathlib
 import random
 import timeit
-from operator import itemgetter
 
 import numpy as np
 import pandas as pd
@@ -35,6 +34,7 @@ def sort3(A):
 
 
 def sort4(A):
+    from operator import itemgetter
     A.sort(key=itemgetter(1))
 
 
@@ -43,6 +43,7 @@ def sort5(A):
 
 
 def sort6(A):
+    from operator import itemgetter
     sorted(A, key=itemgetter(1))
 
 
@@ -101,7 +102,7 @@ def list4(N):
 
 
 def list5(N):
-    A = [i for i in range(N)]
+    [i for i in range(N)]
 
 
 def main():
@@ -179,10 +180,17 @@ def main():
                                              '[None for _ in range(N)]')]
         for func, func_name in list_func:
             record = do(record, func, N, 'list1', func_name, N)
+
         list_func = [(list3, 'append()'), (list4, 'A[i] = i'),
-                     (list5, 'A = [i for i in range(N)]')]
+                     (list5, '[i for i in range(N)]')]
         for func, func_name in list_func:
             record = do(record, func, N, 'list2', func_name, N)
+
+    for N in [10**3]:
+        list_func = [(list6, '[[None] * N for _ in range(N)]'),
+                     (list7, '[[None for _ in range(N)] for _ in range(N)]')]
+        for func, func_name in list_func:
+            record = do(record, func, N, 'list3', func_name, N)
 
     # output
     record['time'] *= 1000
