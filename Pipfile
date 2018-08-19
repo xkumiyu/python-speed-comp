@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyter = "*"
+numpy = "*"
+pandas = "*"
+seaborn = "*"
+
+[dev-packages]
+pylint = "*"
+isort = "*"
+"autopep8" = "*"
+yapf = "*"
+
+[requires]
+python_version = "3.5"
