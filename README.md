@@ -195,9 +195,5 @@ A = [i for i in range(N)]
 ## Usage
 
 ``` sh
-pipenv shell
-```
-
-``` sh
 python main.py
 ```
