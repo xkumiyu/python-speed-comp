@@ -194,6 +194,10 @@ A = [i for i in range(N)]
 
 ## Usage
 
-``` bash
-$ python main.py
+``` sh
+pipenv shell
+```
+
+``` sh
+python main.py
 ```
